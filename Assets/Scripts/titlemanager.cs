@@ -13,6 +13,7 @@ public class titlemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //マウスが押されたらシーンをGameSceneに変更する
         if (Input.GetMouseButton(0)) {
              Application.LoadLevel("GameScene");
         }

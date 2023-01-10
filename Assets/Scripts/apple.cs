@@ -49,7 +49,6 @@ public class apple : MonoBehaviour
         Count--;
     }
  
-
     public crash Add(Vector3 pos)
     {
         GameObject g = Instantiate (Crash, pos, Quaternion.identity) as GameObject;
@@ -62,15 +61,11 @@ public class apple : MonoBehaviour
     }
 
 
-
     // appleオブジェクトに追加したRigidbody2Dコンポーネントへアクセスする
     Rigidbody2D _rigidbody2D = null;
     public Rigidbody2D RigidBody {
         get { return _rigidbody2D ?? (_rigidbody2D = gameObject.GetComponent<Rigidbody2D> ()); }
     }
-
-    float _width = 0.0f;
-    float _height = 0.0f;
 
     public static int Count = 0;
 
